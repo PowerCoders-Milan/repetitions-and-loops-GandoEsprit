@@ -11,3 +11,15 @@ for(var values of arr1){
 }
 
 console.log(valuesNumber + ' numbers, ' + valuesString + ' letters');
+
+var count = 0;
+
+for(var iterator = 0; iterator < arr1.length; iterator++){
+    var result = arr1.filter(word => arr1[iterator]== word);
+
+    if(count < result.length){
+        count = result.length;
+    }
+}
+
+console.log('\n\n' + count);
